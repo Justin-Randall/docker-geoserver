@@ -1,3 +1,5 @@
 #!/usr/bin/bash
 
-docker build -t geoserver .
+. env.sh
+
+docker build -t ${IMAGENAME}:latest .
